@@ -103,7 +103,7 @@ export class ReactNativeKeychainStorageAdapter implements IStorageAdapter {
 
   private deserializeKeys(value: string) {
     try {
-      return JSON.parse(value) as { [key: string]: string };
+      return JSON.parse(value.replace(/[\u0003]/g, "")) as { [key: string]: string };
     } catch (error) {
       throw new ReactNativeKeychainStorageAdapterError(
         ReactNativeKeychainStorageAdapterErrorStatus.DeserializationError,
