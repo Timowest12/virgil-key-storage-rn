@@ -1,5 +1,5 @@
 {
-  "name": "@virgilsecurity/key-storage-rn",
+  "name": "@timowest/virgile3kitstripPixelProblem",
   "version": "1.0.0",
   "description": "IStorageAdapter implementation for React Native",
   "main": "./dist/key-storage-rn.cjs.js",
